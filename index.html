@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="formulario.css  " media = " screen ">
+   <title>Formulario</title>
+
+</head>
+
+<body>
+    <div class="campo">
+        <h1 id = " titulo ">Formulário Para Cadastro</h1>
+        <p id = " subtitulo">Preencha os campos a seguir:</p>
+    </div>
+    <br>
+
+
+<form>
+  <fieldset class="grupo">
+    <div class="campo">
+        <label for="Nome"><strong>Nome:</strong></label>
+        <input  type = " text "Nome="nome" id= "nome" required>
+        <label for="Sobrenome"><strong>Sobrenome:</strong></label>
+        <input  type = " text " Sobrenome = " Sobrenome " id = " Sobrenome" required >
+    </div> <br>
+    <div class="grupo">
+         <label for= "Sexo"><Strong>Sexo:</Strong></label>
+         <input type="radio" name="sexo" values="M" checked="checked "/>Maculino
+         <input type="radio" name="sexo" values="F"/>Feminino
+    </div> <br>
+        </form>
+         
+      <form>
+    <div class="campo">           
+         <label for="Data de nascimento"><strong>Data de nascimento:</strong></label>
+              <input type="date" name="Nascimento" required>
+              <br>
+    </div>     
+           
+  
+    <div class="campo">   
+    <label for="E-mail"><Strong>E-mail:</Strong></label>
+        <input  type = " text "E-mail = " E-mail " id = " E-mail" required >
+    </div>
+    <br> 
+    <div class="campo">      
+         <label for="Telefone"><strong>Telefone:</strong></label>
+         <input  type = " text "Telefone = "Telefone:" id = " Telefone" required >
+          <label for="CEP"><strong>CEP:</strong></label>
+          <input  type = " text "CEP = "CEP:" id = " CEP"  >
+        </div>
+    <br>
+    <div class="campo">
+         <label for="Endereço"><strong>Endereço:</strong></label>
+         <input  type = " text "Endereço = "Endereço" >
+         <label for="numero"><strong>Número:</strong></label>
+         <input  type = " text "Número = "Número:" ><br>
+         <label for="Bairro"><strong>Bairro:</strong></label>
+         <input  type = " text "Bairro = "Bairro:" >
+         <label for="Cidade"><strong>Cidade:</strong></label>
+         <input  type = " text "Cidade = "Cidade:" >
+         <select id='estados'>
+            <option value="Selecione seu estado" selected disabled>Selecione seu estado</option>
+            <option value="Acre (AC)">Acre (AC)</option>
+            <option value="Alagoas (AL)">Alagoas (AL)</option>
+            <option value="Amapá (AP)">Amapá (AP)</option>
+            <option value="Amazonas (AM)">Amazonas (AM)</option>
+            <option value="Bahia (BA)">Bahia (BA)</option>
+            <option value="Ceará (CE)">Ceará (CE)</option>
+            <option value="Distrito Federal (DF)">Distrito Federal (DF)</option>
+            <option value="Espírito Santo (ES)">Espírito Santo (ES)</option>
+            <option value="Goiás (GO)">Goiás (GO)</option>
+            <option value="Maranhão (MA)">Maranhão (MA)</option>
+            <option value="Mato Grosso (MT)">Mato Grosso (MT)</option>
+            <option value="Mato Grosso do Sul (MS)">Mato Grosso do Sul (MS)</option>
+            <option value="Minas Gerais (MG)">Minas Gerais (MG)</option>
+            <option value="Pará (PA)">Pará (PA)</option>
+            <option value="Paraíba (PB)">Paraíba (PB)</option>
+            <option value="Paraná (PR)">Paraná (PR)</option>
+            <option value="Pernambuco (PE)">Pernambuco (PE)</option>
+            <option value="Piauí (PI)">Piauí (PI)</option>
+            <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
+            <option value="Rio Grande do Norte (RN)">Rio Grande do Norte (RN)</option>
+            <option value="Rio Grande do Sul (RS)">Rio Grande do Sul (RS)</option>
+            <option value="Rondônia (RO)">Rondônia (RO)</option>
+            <option value="Roraima (RR)">Roraima (RR)</option>
+            <option value="Santa Catarina (SC)">Santa Catarina (SC)</option>
+            <option value="São Paulo (SP)">São Paulo (SP)</option>
+            <option value="Sergipe (SE)">Sergipe (SE)</option>
+            <option value="Tocantins (TO)">Tocantins (TO)</option>
+          </select>
+</div><br>
+<div class="campo">
+        <label><strong> De qual lado da aplicação você desenvolver?</strong></label>
+
+            <input type="radio" name="app" values="Back-end" />Back-end
+            <input type="radio" name="app" values="Front-end"/>Front-end
+            <input type="radio" name="app" values="Fullstack"/>Fullstack
+</div>  
+
+    
+<div>
+<br>
+    <label><strong>Carta de apresentação:</strong></label>
+    <br>
+    <textarea name="Carta de apresentação" rows="10" cols="40"></textarea>
+    <input class="botao" type="submit" name="enviar" value="Salvar e enviar">
+</div>  
+</body>
+</form>
+</fieldset>
+
+</html>
+
+
+
